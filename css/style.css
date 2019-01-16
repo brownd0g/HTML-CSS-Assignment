@@ -1,0 +1,163 @@
+
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+body {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    overflow: hidden;
+    align-content: center;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.column {
+    float: left;
+}
+
+#col_left {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#col_right {
+    text-align: center;
+}
+
+#col_right ol li {
+    margin: 15px;
+}
+
+/* Add a hover effect to an image */
+
+#andrew:hover {
+    opacity: 0.3;
+    /* For IE8 and earlier */
+    filter: alpha(opacity=30);
+}
+
+/* Set Heading styles */
+
+h1 {
+    font-weight: bold;
+    font-size: 200%;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 140%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 125%;
+    padding: 10px;
+}
+
+/* Set basic rules for styling */
+u {
+    text-decoration: underline;
+}
+
+i {
+    font-style: italic;
+}
+
+/* Remove blue link color to links*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Add a hover effect to a link */
+
+a:hover {
+    opacity: 0.3;
+}
+/* Remove visited effect on link */
+
+a:visited {
+    color: inherit;
+}
+
+p {
+    padding-top: 15px;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+/* Sets rules if screen is bigger than 600px */
+    
+    #wrapper {
+        width: 95%;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    #col_left {
+        width: 180px;
+        margin-left: 4%;
+        position: fixed; /* fixed column so it stays visible when scrolling */
+    }
+
+    #col_left ol li {
+        text-align: left;
+        padding-top: 6px;
+        padding-left: 15px;
+    }
+
+    #col_right {
+        width: 59%;
+        margin-left: 4%;
+        margin-left: 260px
+    }
+
+    #col_right ol i {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 599px) {
+/* Sets rules for screen smaller than 600px */
+    body {
+        font-size: 14px;
+    }
+
+    #wrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #col_left {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    #col_right {
+        width: 100%;
+    }
+    
+    h2 {
+        margin-top: 20px;
+    }
+}
